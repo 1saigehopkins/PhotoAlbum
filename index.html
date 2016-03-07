@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>orange and purple</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        console.log("hello")
+
+        alert("welcome to my website which was created in order to share my favorite colors with you, my valliant visitor.");
+
+        prompt("are you excited")
+
+        prompt("did you know that I am excited")
+
+      $("img").hover(function(){
+          if ( $('.stretchd').toArray().includes($()[0]) ) {
+            $(this).removeClass("stretchd");
+          } else {
+            $('img').removeClass("stretchd");
+            $(this).addClass("stretchd");
+          }
+        })
+
+        $(".face").click(function(){
+        $(".face").toggleClass("zoom");
+        })
+
+        $(".wood").click(function(){
+        $(".wood").toggleClass("zoom");
+        })
+
+        $(".dirt").click(function(){
+        $(".dirt").toggleClass("zoom");
+        })
+
+        $(".cake").click(function(){
+        $(".cake").toggleClass("zoom");
+        })
+
+
+      });
+    </script>
+
+    <style>
+    .stretchd {
+      width: 600px;
+      height: 600px;
+    }
+
+    .zoom {
+      width: 200px;
+      height: 200px;
+      top: -4000px
+      right:-3000px;
+      -webkit-transition: width 2s, height 2s;
+    }
+
+      p {
+        text-align: center;
+        font-size: 40px;
+        font-family: monospace sans-serif;
+      }
+
+      body {
+        background-color: rgba(129, 76, 96, .5);
+        margin: 5px;
+        margin-left: 150px;
+      }
+
+      div {
+        width: 600px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50px;
+        padding-left: 100px;
+      }
+
+      img {
+        -webkit-transition: width 2s, height 2s;
+        width: 10000px;
+      }
+
+      section {
+        background-color: rgba(129, 76, 96, .5);
+        width: 400px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p>swish</p>
+    <section>
+    <div class="face"><img src="http://www.facepaint.com/blog/wp-content/uploads/2016/01/16.jpg">
+    </div>
+
+    <div class="wood"><img src="http://www.paletteapp.com/assets/Products/Wood-Boo/Images/hi-tech_2_large.jpg">
+    </div>
+
+    <div class="dirt"><img src="http://previewcf.turbosquid.com/Preview/2014/08/01__13_43_05/Dry%20Dirt.jpg5abdefd1-945e-4133-9be1-9c97ad8cf329Larger.jpg">
+    </div>
+
+    <div class="cake"><img src="https://s-media-cache-ak0.pinimg.com/736x/34/af/c0/34afc09548d5130906fd432ed880963d.jpg">
+    </div>
+
+    </section>
+  </body>
+
+</html>
